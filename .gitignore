@@ -1,0 +1,15 @@
+*.mp4
+*.avi
+*.zip
+*.rar
+*.7z
+*.exe
+*.docx
+*.xlsx
+*.pptx
+build/
+.vscode/
+.vs/
+.idea/
+*.o
+*.obj
