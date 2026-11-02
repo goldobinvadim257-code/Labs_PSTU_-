@@ -3,16 +3,17 @@ using namespace std;
 
 int main() {
     int a[8] = {1, 2, 3, 4, 5, 6, 7, 8};
-    bool flag = true;
+    bool F = false;
+    int i = 0;
 
-    for (int i = 0; i < 7; i++) {
+    while (i < 7 && !F) {
         if (a[i] > a[i + 1]) {
-            flag = false;
-            break;
+            F = true;
         }
+        i++;
     }
 
-    if (flag) {
+    if (!F) {
         cout << "Massiv uporyadochen po vozrastaniyu" << endl;
     } else {
         cout << "Massiv NE uporyadochen po vozrastaniyu" << endl;

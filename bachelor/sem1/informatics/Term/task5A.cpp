@@ -2,21 +2,20 @@
 using namespace std;
 
 int main() {
-    int a[7] = {5, 3, 9, 1, 7, 2, 8};
+    int A[7] = {5, 3, 9, 1, 7, 2, 8};
 
     for (int i = 1; i < 7; i++) {
-        int key = a[i];
+        int buf = A[i];
         int j = i - 1;
-
-        while (j >= 0 && a[j] > key) {
-            a[j + 1] = a[j];
+        while (j >= 0 && A[j] > buf) {
+            A[j + 1] = A[j];
             j--;
         }
-        a[j + 1] = key;
+        A[j + 1] = buf;
     }
 
     for (int i = 0; i < 7; i++) {
-        cout << a[i] << " ";
+        cout << A[i] << " ";
     }
 
     return 0;
